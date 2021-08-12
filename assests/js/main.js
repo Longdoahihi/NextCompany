@@ -1,15 +1,8 @@
-var $ = document.querySelector.bind(document);
-var $$ = document.querySelectorAll.bind(document);
+import openHeader from './header.js'
 
-var headerSearchBox = $('.header__search__box');
-var outHeaderSearch = $('.app__class');
-outHeaderSearch.addEventListener("click",()=>{
-    headerSearchBox.classList.remove('header__search__box--open');
-})
 
-function openBox(){
-    headerSearchBox.classList.toggle('header__search__box--open');
-    
-}
-document.querySelector('.header__icon__search').addEventListener("click", openBox);
-
+$(document).ready(function(){
+    $('.carousel').carousel({
+        interval: 0
+    })
+});
