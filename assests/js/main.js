@@ -1,8 +1,3 @@
 import openHeader from './header.js'
+import editSlider from './slider.js'
 
-
-$(document).ready(function(){
-    $('.carousel').carousel({
-        interval: 0
-    })
-});
