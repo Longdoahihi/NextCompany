@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- link bootstrap   -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- link magic scroll  -->
+    <link rel="stylesheet" href="./assests/magicscroll/magicscroll.css">
     <!-- link file css  -->
     <link rel="stylesheet" href="./assests/css/base.css">
     <link rel="stylesheet" href="./assests/css/main.css">
@@ -18,13 +20,16 @@
     <!-- link font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/a1fab5bbca.js" crossorigin="anonymous"></script>
-    
+    <!-- link carousel owl auto  -->
+    <link rel="stylesheet" href="./assests/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assests/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assests/owlcarousel/assets/owl.theme.green.min.css">
     <title>Next Company - copy</title>
     
 </head>
 <body>
     <div class="app">
-        <div class="app__header">
+        <div class="app__header" id="header">
             <div class="grid">
                 <div class="grid__row header__menu">
                     <div class=" header__menu__item header__logo">
@@ -211,7 +216,7 @@
             <div class="service">
                 <div class="grid">
                     <div class="grid__row">
-                        <div class="h1">Dịch vụ</div>
+                        <div class="service__heading">Dịch vụ</div>
                     </div>
                     <div class="grid__row service__project">
                         <div class="grid__col-3">
@@ -304,17 +309,17 @@
                         <div class="grid__col-2">
                             <div class="grid__row">
                                 <div class="parallax__info grid__col-3">
-                                    <div class="parallax__info__num">127</div>
+                                    <div class="parallax__info__num info__num1">0</div>
                                     <div class="parallax__info__hr"></div>
                                     <div class="parallax__info__des">KHÁCH HÀNG HÀI LÒNG</div>
                                 </div>
                                 <div class="parallax__info grid__col-3">
-                                    <div class="parallax__info__num">150</div>
+                                    <div class="parallax__info__num info__num2">0</div>
                                     <div class="parallax__info__hr"></div>
                                     <div class="parallax__info__des">DỰ ÁN HOÀN THÀNH</div>
                                 </div>
-                                <div class="parallax__info grid__col-3">
-                                    <div class="parallax__info__num">10</div>
+                                <div class="parallax__info grid__col-3 ">
+                                    <div class="parallax__info__num info__num3">0</div>
                                     <div class="parallax__info__hr"></div>
                                     <div class="parallax__info__des">CHỨNG NHẬN</div>
                                 </div>
@@ -376,8 +381,400 @@
                     </div>
                 </div>
             </div>
+            <div class="whatwedo">
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="grid__col-2 whatwedo__runNum">
+                            <ul class="whatwedo__list">
+                                <li class="whatwedo__item">
+                                    <h1 class="whatwedo__item__heading">Dịch vụ CSKH thân thiện</h1>
+                                    <div class="whatwedo__item__numberframe">
+                                        <div class="whatwedo__item__number row__what row__what1">
+                                            <div class="whatwedo__item__num whatwedo__num1">95</div>
+                                            <span>%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="whatwedo__item">
+                                    <h1 class="whatwedo__item__heading">Áp dụng công nghệ mới</h1>
+                                    <div class="whatwedo__item__numberframe ">
+                                        <div class="whatwedo__item__number row__what row__what2">
+                                            <div class="whatwedo__item__num whatwedo__num2">80</div>
+                                            <span>%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="whatwedo__item">
+                                    <h1 class="whatwedo__item__heading">Khách hàng hài lòng 100%</h1>
+                                    <div class="whatwedo__item__numberframe">
+                                        <div class="whatwedo__item__number row__what row__what3">
+                                            <div class="whatwedo__item__num whatwedo__num3">75</div>
+                                            <span>%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="whatwedo__item">
+                                    <h1 class="whatwedo__item__heading">Đảm bảo chất lượng</h1>
+                                    <div class="whatwedo__item__numberframe">
+                                        <div class="whatwedo__item__number row__what row__what4">
+                                            <div class="whatwedo__item__num whatwedo__num4">60</div>
+                                            <span>%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid__col-2 whatwedo__text">
+                            <h1 class="whatwedo__text__heading">CHÚNG TÔI LÀM GÌ?</h1>
+                            <div class="whatwedo__text__des">
+                                Tại NextCompany, chúng tôi xây dựng một hệ thống các qui trình và giải pháp nhằm mang đến cho quí khách hàng và đối tác những giải pháp kiến trúc và công nghệ xây dựng mang tính đột phá. 
+                            </div>
+                            <div class="whatwedo__text__des">
+                                Góp phần hiện thực hóa giấc mơ an cư của mọi người Việt Nam, và tiến đến việc tiến ra thế giới bằng nhiệt huyết tuổi trẻ và niềm đam mê chinh phục.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="grid">
+                    <div class="grid__row">
+                        <h1 class="blog__text__heading">Bài viết mới nhất</h1>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__col-2">
+                            <div class="blog__project">
+                                <img src="./assests/img/blog1.jpg" alt="" class="blog__project__img">
+                                <div class="blog__project__des">
+                                    <h1 class="blog__des__heading">Căn hộ Flora Apartments</h1>
+                                    <p class="blog__des__time">Thứ Ba 10/09/2019</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__col-2">
+                            <div class="blog__project">
+                                <img src="./assests/img/blog2.jpg" alt="" class="blog__project__img">
+                                <div class="blog__project__des">
+                                    <h1 class="blog__des__heading">Nơi Cuộc Sống Bắt Đầu Với Thiên Nhiên</h1>
+                                    <p class="blog__des__time">Thứ Ba 10/09/2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__col-2">
+                            <div class="blog__project">
+                                <img src="./assests/img/blog3.jpg" alt="" class="blog__project__img">
+                                <div class="blog__project__des">
+                                    <h1 class="blog__des__heading">Triangle Concrete House on lake</h1>
+                                    <p class="blog__des__time">Thứ Ba 10/09/2019</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__col-2">
+                            <div class="blog__project">
+                                <img src="./assests/img/blog4.jpg" alt="" class="blog__project__img">
+                                <div class="blog__project__des">
+                                    <h1 class="blog__des__heading">Căn Hộ Đậm Chất Phương Tây</h1>
+                                    <p class="blog__des__time">Thứ Năm 08/08/2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="experience">
+                            <div class="experience__text">
+                                <div class="experience__year">Tin tức</div>
+                                <div class="experience__work">Phổ biến</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="videoWork">
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="grid__col-2 videoWork__video">
+                            <img src="./assests/img/blog4.jpg" alt="" class="videoWork__img">
+                            <div class="videoWork__icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="grid__col-2 whatwedo__text videoWork__des">
+                            <h1 class="whatwedo__text__heading">VĂN HOÁ - HOẠT ĐỘNG</h1>
+                            <div class="whatwedo__text__des">
+                                Cùng với đội ngũ các kiến trúc sư có năng lực chuyên môn cao, chúng 
+                                tôi chọn cho mình một phong cách hiện đại và chuyên nghiệp trong 
+                                các dịch vụ mà chúng tôi cung cấp, mà tiên phong là lĩnh vực tư vấn 
+                                thiết kế, nhằm mục tiêu đưa Kiến trúc NextCompany thành một công ty 
+                                hàng đầu trong lĩnh vực xây dựng tại VietNam. Góp phần kiến tạo một 
+                                xu hướng kiến trúc trách nhiệm và hài hòa...
+                            </div>
+                            <div class="whatwedo__text__des">
+                                -  Không nói lý do – chỉ nói kết quả <br>
+                                -  Không tranh cãi – chỉ nói giải pháp <br>
+                                -  Không chứng tỏ cá nhân – chỉ cống hiến <br>
+                                -  Không vụ lợi - chỉ hưởng thành quả từ năng lực của mình<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoWork__videoup hidden">
+                    <iframe width="1153" height="680" src="https://www.youtube.com/embed/DkrAxPsKJv8" title="YouTube video player" frameborder="0" allow=" autoplay; " allowfullscreen></iframe>
+                    <div class="videoup__icon__exit">X</div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="grid">
+                    <div class="grid__row">
+                        <h1 class="contact__text">Hãy liên hệ ngay với chúng tôi! <br>
+                            Phục vụ chu đáo - Thiết kế sáng tạo - Thi công sắc sảo - Dịch vụ hoàn hảo<br>
+                            Hãy cùng NextCompany xây dựng ngôi nhà mơ ước của bạn!<br>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="grid">
+                    <div class="grid__row">
+                        <h1 class="blog__text__heading">Dự án</h1>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__col-4">
+                            <div class="project__product">
+                                <img src="./assests/img/product1.jpg" alt="" class="product__img">
+                                <div class="product__text">
+                                    <h1 class="product__heading"> Incredible House In Scottish Highland </h1>
+                                    <div class="product__text__des">Liên hệ</div>
+                                    <div class="btnPri product__button ">
+                                        <a href="#">xem chi tiết</a>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__col-4">
+                            <div class="project__product">
+                                <img src="./assests/img/product2.jpg" alt="" class="product__img">
+                                <div class="product__text">
+                                    <h1 class="product__heading">  Contemporary Villa </h1>
+                                    <div class="product__text__des">Liên hệ</div>
+                                    <div class="btnPri product__button ">
+                                        <a href="#">xem chi tiết</a>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__col-4">
+                            <div class="project__product">
+                                <img src="./assests/img/product3.jpg" alt="" class="product__img">
+                                <div class="product__text">
+                                    <h1 class="product__heading">  Rodney Livingroom </h1>
+                                    <div class="product__text__des">Liên hệ</div>
+                                    <div class="btnPri product__button ">
+                                        <a href="#">xem chi tiết</a>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__col-4">
+                            <div class="project__product">
+                                <img src="./assests/img/product4.jpg" alt="" class="product__img">
+                                <div class="product__text">
+                                    <h1 class="product__heading">  Westside Villa </h1>
+                                    <div class="product__text__des">Liên hệ</div>
+                                    <div class="btnPri product__button ">
+                                        <a href="#">xem chi tiết</a>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__col-4">
+                            <div class="project__product">
+                                <img src="./assests/img/product5.jpg" alt="" class="product__img">
+                                <div class="product__text">
+                                    <h1 class="product__heading">  South Valley Apartment </h1>
+                                    <div class="product__text__des">Liên hệ</div>
+                                    <div class="btnPri product__button ">
+                                        <a href="#">xem chi tiết</a>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__col-4">
+                            <div class="project__product">
+                                <img src="./assests/img/product6.jpg" alt="" class="product__img">
+                                <div class="product__text">
+                                    <h1 class="product__heading">  Silvermore Apartment  </h1>
+                                    <div class="product__text__des">Liên hệ</div>
+                                    <div class="btnPri product__button ">
+                                        <a href="#">xem chi tiết</a>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__col-4">
+                            <div class="project__product">
+                                <img src="./assests/img/product7.jpg" alt="" class="product__img">
+                                <div class="product__text">
+                                    <h1 class="product__heading">  National Cold War Exhibition  </h1>
+                                    <div class="product__text__des">Liên hệ</div>
+                                    <div class="btnPri product__button ">
+                                        <a href="#">xem chi tiết</a>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__col-4">
+                            <div class="project__product">
+                                <img src="./assests/img/product8.jpg" alt="" class="product__img">
+                                <div class="product__text">
+                                    <h1 class="product__heading">  Hangzhou Tower 501 Plaza  </h1>
+                                    <div class="product__text__des"> 25,000,000₫</div>
+                                    <div class="btnPri product__button ">
+                                        <a href="#">xem chi tiết</a>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="experience">
+                            <div class="experience__text">
+                                <div class="experience__year">Công trình</div>
+                                <div class="experience__work">tiêu biểu</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="marque">
+                <div class="grid">
+                    <div class="grid__row">
+                        <div class="MagicScroll" data-options="step: 0; items: 6; speed: 25000;">
+                            <img src="./assests/img/marquee1.jpg" class="marquee__item" />
+                            <img src="./assests/img/marquee2.jpg" class="marquee__item" />
+                            <img src="./assests/img/marquee3.jpg" class="marquee__item" />
+                            <img src="./assests/img/marquee4.jpg" class="marquee__item" />
+                            <img src="./assests/img/marquee6.jpg" class="marquee__item" />
+                            <img src="./assests/img/marquee7.jpg" class="marquee__item" />
+                            <img src="./assests/img/marquee8.jpg" class="marquee__item" />
+                            <img src="./assests/img/marquee9.jpg" class="marquee__item" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="app__footer"></div>
+        <div class="app__footer">
+            <div class="grid">
+                <div class="grid__row footer__list">
+                        <div class="footer__item grid__col-4">
+                            <h1 class="footer__item__heading">GIỚI THIỆU</h1>
+                            <div class="footer__item__des">Chúng tôi mong muốn trở thành nhà cung
+                                 cấp dịch vụ xây dựng dân dụng giá trị gia tăng, hướng đến trở thành
+                                  một mô hình chuẩn mực và tiên phong trong lĩnh vực xây dựng tại
+                                   thị trường Việt Nam.
+                            </div>
+                            <div class="footer__checked">
+                                <img src="./assests/img/chungnhan.png" alt="">
+                            </div>
+                            <div class="footer__contact">
+                                <div class="footer__contact__item">
+                                    <i class="fab fa-facebook-f"></i>
+                                </div>
+                                <div class="footer__contact__item">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                                <div class="footer__contact__item">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                                <div class="footer__contact__item">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__item grid__col-4">
+                            <h1 class="footer__item__heading">THÔNG TIN LIÊN HỆ</h1>
+                            <ul class="footer__item__list">
+                                <li class="footer__list__text">
+                                    - <h1 class="footer__text__heading">Địa chỉ:</h1>
+                                    <span>Tầng 4, tòa nhà Flemington, số 182, đường Lê Đại Hành, phường 15, quận 11, Tp. Hồ Chí Minh.</span>
+                                </li>
+                                <li class="footer__list__text">
+                                    - <h1 class="footer__text__heading">Điện thoại:</h1>
+                                    <span> 1900.636.099</span>
+                                </li>
+                                <li class="footer__list__text">
+                                    - <h1 class="footer__text__heading">Fax:</h1>
+                                    <span> 1900.636.099</span>
+                                </li>
+                                <li class="footer__list__text">
+                                    - <h1 class="footer__text__heading">Email:</h1>
+                                    <span> hi@haravan.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__item grid__col-4">
+                            <h1 class="footer__item__heading">PHÁP LÝ & CÂU HỎI</h1>
+                            <ul class="footer__item__list">
+                                <li class="footer__list__text">
+                                    <span>- Tìm kiếm</span>
+                                </li>
+                                <li class="footer__list__text">
+                                    <span>- Giới thiệu</span>
+                                </li>
+                                <li class="footer__list__text">
+                                    <span>- Chính sách đổi trả</span>
+                                </li>
+                                <li class="footer__list__text">
+                                    <span>- Chính sách bảo mật</span>
+                                </li>
+                                <li class="footer__list__text">
+                                    <span>- Điều khoản dịch vụ</span>
+                                </li> 
+                            </ul>
+                        </div>
+                        <div class="footer__item grid__col-4">
+                            <h1 class="footer__item__heading">THÔNG TIN</h1>
+                            <ul class="footer__item__list">
+                                <li class="footer__list__text">
+                                    <span>- Trang chủ</span>
+                                </li>
+                                <li class="footer__list__text">
+                                    <span>- Giới thiệu</span>
+                                </li>
+                                <li class="footer__list__text">
+                                    <span>- Dự án</span>
+                                </li>
+                                <li class="footer__list__text">
+                                    <span>- Chi tiết dự án</span>
+                                </li>
+                                <li class="footer__list__text">
+                                    <span>- Blog</span>
+                                </li> 
+                                <li class="footer__list__text">
+                                    <span>- Liên hệ</span>
+                                </li> 
+                            </ul>
+                            <div class=" footer__btn">
+                                <a href="#header"><i class="fas fa-angle-up"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row footer__copyright">
+                        <div>Copyright © 2021 NextCompany. Copy by Longdoahihi - 14/08/2021</div>
+                    </div>
+                </div>
+        </div>
         <div class="app__class hidden"></div>  
     </div>
     <!-- lik bootstrap  -->
@@ -386,5 +783,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- link file js  -->
     <script type="module" src="./assests/js/main.js"></script> 
+    <!-- link carousel  -->
+    <script src="./assests/owlcarousel/owl.carousel.min.js"></script>
+    <!-- link magic scroll  -->
+    <script src="./assests/magicscroll/magicscroll.js"></script>
 </body>
 </html>

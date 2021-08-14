@@ -1,3 +1,5 @@
 import openHeader from './header.js'
 import editSlider from './slider.js'
-
+import runNum from './runNumber.js'
+import autoplayVideo from './autoplayVideo.js'
+import carousel from './carousel.js'
