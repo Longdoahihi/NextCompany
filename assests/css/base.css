@@ -70,12 +70,13 @@ html {
 
 a {
     text-decoration: none !important;
-    color: var(--white-color) !important;
+    color: var(--white-color);
 }
 
 
 ul {
     list-style-type: none;
+    margin: 0;
 }
 
 .hidden{
