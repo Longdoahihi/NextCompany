@@ -12,8 +12,7 @@ body {
     background: url(../img/h-prl-one_bg.jpg) no-repeat top left;
     background-size: cover;
     background-attachment: fixed;
-    width: 100vw;
-    /* overflow-x: hidden;  */
+    overflow-x: hidden;   
     /* min-height: 10000px;  */
 }
 .overflowHiddenY{
@@ -21,10 +20,8 @@ body {
 }
 
 /* header top  */
-.app {
-    width: 100%;
-}
 .app__header{
+    color: var(--text-color);
     position: relative;
     top: 0; left: 0; right: 0; bottom: 0;
     height: var(--header-height);
@@ -32,27 +29,140 @@ body {
     background-color: var(--white-color);
     letter-spacing: 1px;
 }
-
-.header__menu{
+.header1{
     height: 9rem;
+}
+.header1 .header__menu{
     align-items: center;
 }
-.header__logo{
+.header1 .header__menu__item{
+    height: 100%;
+}
+.header1 .header__menu__item__inner{ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+.header1 .header__logo{
     width: 30%;
+}
+.header1 .header__menu{
+    height: 100%;
+}
+.header1 .grid{
+    height: 100%;
+}
+.header1 .header__search__text__icon{
+    display: none;
+}
+.header1  .header__logo__search,.header__logo__text{
+   display: none;
+}
+.header2  .header__logo__search,.header__logo__text{
+   display: none;
+}
+.header2,.header3{
+    height: 12rem;
+    
+}
+.header2 .grid{
+    height: 100%;
+}
+.header2 .header__menu{
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+.header2 .header__search{
+    position: absolute;
+    height: 7rem;
+    border-left: none;
+    right: 0; top: 0;
+}
+.header2 .header__search::before{
+    display: none;
+}
+.header2 .header__search__box {
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.header2 .header__search  .header__search__text__icon{
+    display: block;
+    align-self: center;
+    font-weight: 500;
+    text-transform: none;
+}
+
+.header3 .header__menu{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+ .header3 .header__logo {
+    margin: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+ }
+ .header3 .header__search{
+     display: none;
+ }
+ .header3 .header__logo__search{
+     flex: 0.8;
+     display: flex;
+     justify-content: center;
+ }
+ .header3 .header__box__input{
+    padding: 10px 16px ; 
+    width: 90%;
+    border: 1px solid var(--border-grey);
+}
+ .header3 .header__logo__text{
+     display: flex;
+     width: 25%;
+     justify-content: space-between;
+ }
+ .header__text__item{
+     display: flex;
+     font-size: 1.4rem;
+ }
+ .header__text__icon{
+    display: flex; 
+    align-items: center;
+ }
+ .header__text__icon .header__text__icon__inner{
+     font-size: 2rem;
+     padding-right: 1.5rem;
+ }
+/* .header3 .header__search 
+.header__search__text__icon,.header__icon__search,
+.header__box__heading,.header__search::before{
+    display: none;  
+}
+.header3 .header__search__box{
+    display: block;
+    background-color: transparent;
+    box-shadow: none;
+}
+.header3 .header__search__box::before,.header__search__box::after{
+    display: none;
+}
+.header3 .header__box__input__inner{
+    position: absolute;
+    top: 0;
+    left: 50%;
+} */
+
+.header__logo{
     display: flex;
     align-items: center;
 }
 .header__item__logo{
     width: 233px;
     height: 44px;
-}
-.header__menu__item{
-    height: 100%;
-}
-.header__menu__item__inner{ 
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
 }
 .header__menu__list{
     display: flex;
@@ -61,8 +171,9 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     list-style-type: none;
-    position:  relative;
+    /* position:  relative;   */
 }
+
 .header__search::before{
     content: '';
     display: inline-block;
@@ -76,7 +187,7 @@ body {
     display: flex;
     align-self: center;
     height: 100%;
-    position: relative;
+    position: relative;  
 }
 .header__list__item .header__item__link{
     text-decoration: none;
@@ -134,7 +245,7 @@ body {
     }
 }
 .header__select__list{
-    list-style-type: none;
+    list-style-type: none; 
 }
 .select__list__item{
 }
@@ -161,8 +272,8 @@ body {
     display: none;
     position: absolute;
     z-index: 3;
-    top: 100%;
-    right: 0;
+    top: 90%;
+    right: 7%;
     background-color: var(--white-color);
     width: 38rem;
     border-radius: 4px;
